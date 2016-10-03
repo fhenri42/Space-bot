@@ -1,0 +1,43 @@
+{
+  "name": "kik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/babel-cli/bin/babel-node.js bot.js",
+    "lint": "eslint bot.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kikinteractive/kik": "^2.0.10",
+    "moment": "^2.15.1",
+    "recastai": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.11.5",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb-base": "^2.0.0",
+    "eslint-plugin-import": "^1.6.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "semi": [
+        2,
+        "never"
+      ]
+    }
+  }
+}
